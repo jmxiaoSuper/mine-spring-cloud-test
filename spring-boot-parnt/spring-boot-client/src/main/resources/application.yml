@@ -1,0 +1,20 @@
+server:
+  port: 9000
+  servlet:
+    context-path: /client
+logging:
+  level:
+      com.spring.boot.test : debug
+
+#  spring.application.name=a-bootiful-client
+#  # N.B. this is the default:
+#  spring.cloud.config.uri=http://localhost:8888
+spring:
+  application:
+    name: spring-boot-client-9000
+eureka:
+  #客户端
+  client:
+    #注册中心地址
+    service-url:
+      defaultZone: http://eureka99:9999/eureka/, http://eureka98:9998/eureka/
