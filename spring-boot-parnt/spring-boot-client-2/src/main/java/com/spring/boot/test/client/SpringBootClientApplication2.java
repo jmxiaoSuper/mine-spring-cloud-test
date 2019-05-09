@@ -22,7 +22,7 @@ public class SpringBootClientApplication2 {
 @RestController
 class MessageRestController {
 
-	@Value("${message:Hello default}")
+	@Value("${show.message:Hello default}")
 	private String message;
 
 	@RequestMapping("/message")

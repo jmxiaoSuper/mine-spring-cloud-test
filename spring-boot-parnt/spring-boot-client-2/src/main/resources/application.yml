@@ -6,14 +6,10 @@ logging:
   level:
       com.spring.boot.test : debug
 
-spring:
-  application:
-    name: spring-boot-client-9002
-  cloud:
-    config:
-      uri: http://localhost:9955
 management:
   endpoints:
     web:
       exposure:
-        include: *
+        include: "*"
+show:
+  message: HelloYAML
