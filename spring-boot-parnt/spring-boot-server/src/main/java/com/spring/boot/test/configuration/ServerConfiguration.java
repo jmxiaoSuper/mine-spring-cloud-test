@@ -29,7 +29,7 @@ public class ServerConfiguration {
 	public Validator validator(){
 		ValidatorFactory validatorFactory = Validation.byProvider( HibernateValidator.class )
 				.configure()
-				.addProperty( "hibernate.validator.fail_fast", "true" )
+				.failFast(true)
 				.buildValidatorFactory();
 		return validatorFactory.getValidator();
 	}
