@@ -11,7 +11,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  */
 @SpringBootApplication(scanBasePackages = {
 		"com.spring.boot.test.controller",
-		"com.spring.boot.test.configuration"})
+		"com.spring.boot.test.configuration",
+		})
 @MapperScan({"com.spring.boot.test.mapper"})
 @EnableTransactionManagement
 public class SpringBootServerApplication {

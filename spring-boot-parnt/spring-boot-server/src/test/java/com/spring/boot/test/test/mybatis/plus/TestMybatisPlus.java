@@ -1,4 +1,4 @@
-package com.spring.boot.test.mybatis.plus;
+package com.spring.boot.test.test.mybatis.plus;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
